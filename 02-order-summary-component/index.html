@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Order summary card</title>
+  </head>
+  <body>
+    <main class="card">
+      <img src="images/illustration-hero.svg" alt="hero image" />
+      <div class="card__body">
+        <h1 class="card__title">Order Summary</h1>
+
+        <p class="card__description">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <section class="card__plan">
+          <img src="images/icon-music.svg" alt="" srcset="" />
+          <div class="card__plan-desc">
+            <p class="plan-desc__title">Annual Plan</p>
+            <p class="plan-desc__price">$59.99/year</p>
+          </div>
+          <button class="btn btn--link">Change</button>
+        </section>
+
+        <button class="btn btn--primary">Proceed to Payment</button>
+        <button class="btn btn--subtle">Cancel Order</button>
+      </div>
+    </main>
+  </body>
+</html>

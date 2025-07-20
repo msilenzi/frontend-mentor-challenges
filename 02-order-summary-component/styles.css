@@ -1,0 +1,149 @@
+:root {
+  --primary-pale: hsl(225, 100%, 94%);
+  --primary-bright: hsl(245, 75%, 52%);
+
+  --neutral-pale: hsl(225, 100%, 98%);
+  --neutral-desaturated: hsl(224, 23%, 55%);
+  --neutral-dark: hsl(223, 47%, 23%);
+
+  --font-main: "Red Hat Display", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-main);
+  background: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-color: var(--primary-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  width: 25rem;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem
+    color-mix(in srgb, var(--neutral-desaturated), transparent 80%);
+}
+
+.card__body {
+  padding: 2rem;
+
+  .card__title {
+    margin: 0;
+    font-size: 1.75em;
+    color: var(--neutral-dark);
+    text-align: center;
+  }
+
+  .card__description {
+    color: var(--neutral-desaturated);
+    text-align: center;
+  }
+}
+
+.card__plan {
+  background-color: var(--neutral-pale);
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__plan-desc {
+  flex: 1;
+  .plan-desc__title {
+    margin: 0 0 0.25rem;
+    font-weight: 900;
+    color: var(--neutral-dark);
+  }
+
+  .plan-desc__price {
+    margin: 0;
+    color: var(--neutral-desaturated);
+  }
+}
+
+.btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease-in-out all;
+
+  &.btn--link {
+    text-decoration: underline;
+    color: var(--primary-bright);
+    font-weight: 800;
+    font-size: 0.85em;
+
+    &:hover {
+      color: color-mix(in hsl, var(--primary-bright), white 10%);
+    }
+  }
+
+  &.btn--primary,
+  &.btn--subtle {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.9em;
+    border-radius: 0.75rem;
+    font-weight: 900;
+  }
+
+  &.btn--primary {
+    background-color: var(--primary-bright);
+    color: #ffffff;
+    box-shadow: 0 0.5rem 1rem
+      color-mix(in hsl, var(--primary-bright), transparent 70%);
+    margin-bottom: 1rem;
+
+    &:hover {
+      background-color: color-mix(in hsl, var(--primary-bright), white 10%);
+      box-shadow: 0 0.25rem 0.75rem
+        color-mix(in hsl, var(--primary-bright), transparent 50%);
+    }
+  }
+
+  &.btn--subtle {
+    color: var(--neutral-desaturated);
+    &:hover {
+      color: var(--neutral-dark);
+      background-color: var(--neutral-pale);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
