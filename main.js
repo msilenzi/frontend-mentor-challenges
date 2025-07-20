@@ -1,13 +1,20 @@
 const challenges = [
-    {
+  {
+    name: "FAQs Accordion",
+    imageSrc: "03-faq-accordion/screenshot-faq-accordion.png",
+    href: "03-faq-accordion",
+    languages: ["html", "css"],
+  },
+  {
     name: "Order Summary Component",
-    imageSrc: "02-order-summary-component/screenshot-order-summary-component.png",
+    imageSrc:
+      "02-order-summary-component/screenshot-order-summary-component.png",
     href: "02-order-summary-component",
     languages: ["html", "css"],
   },
   {
     name: "Recipe Page",
-    imageSrc: "./01-recipe-page/screenshot-recipe-page-msilenzi.png",
+    imageSrc: "01-recipe-page/screenshot-recipe-page-msilenzi.png",
     href: "01-recipe-page",
     languages: ["html", "css"],
   },
