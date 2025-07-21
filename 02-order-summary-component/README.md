@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://github.com/msilenzi/frontend-mentor-challenges/tree/main/02-order-summary-component)
+- [Live Demo](https://msilenzi.github.io/frontend-mentor-challenges/02-order-summary-component)
 
 ## My process
 
