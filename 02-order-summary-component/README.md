@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Final result screenshot](./screenshot-order-summary-component.png)
+![Final result screenshot](./screenshot.png)
 
 ### Links
 

@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Final result](./screenshot-faq-accordion.png)
+![Final result](./screenshot.png)
 
 ### Links
 

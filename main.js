@@ -1,41 +1,36 @@
 const challenges = [
   {
     name: "Contact Form",
-    imageSrc: "04-contact-form/screenshot.png",
-    href: "04-contact-form",
+    folder: "04-contact-form",
     languages: ["html", "css", "js"],
   },
   {
     name: "FAQs Accordion",
-    imageSrc: "03-faq-accordion/screenshot-faq-accordion.png",
-    href: "03-faq-accordion",
+    folder: "03-faq-accordion",
     languages: ["html", "css"],
   },
   {
     name: "Order Summary Component",
-    imageSrc:
-      "02-order-summary-component/screenshot-order-summary-component.png",
-    href: "02-order-summary-component",
+    folder: "02-order-summary-component",
     languages: ["html", "css"],
   },
   {
     name: "Recipe Page",
-    imageSrc: "01-recipe-page/screenshot-recipe-page-msilenzi.png",
-    href: "01-recipe-page",
+    folder: "01-recipe-page",
     languages: ["html", "css"],
   },
 ];
 
 const fragment = document.createDocumentFragment();
 
-challenges.forEach(({ name, imageSrc, href, languages }) => {
+challenges.forEach(({ name, folder, languages }) => {
   const li = document.createElement("li");
   li.className = "card";
-  li.style.backgroundImage = `url('${imageSrc}')`;
+  li.style.backgroundImage = `url('${folder}/screenshot.png')`;
   fragment.appendChild(li);
 
   const a = document.createElement("a");
-  a.href = href;
+  a.href = folder;
   li.appendChild(a);
 
   const cardBody = document.createElement("div");
