@@ -28,11 +28,11 @@
   </head>
 
   <body>
-    <form class="form">
+    <form class="form" id="contact-form" novalidate>
       <h1 class="page-title">Contact Us</h1>
 
       <div class="radio-group__items">
-        <div class="input-group">
+        <div class="input-group validation-required">
           <label for="first-name">First Name</label>
           <input
             type="text"
@@ -40,10 +40,10 @@
             autocomplete="given-name"
             required
           />
-          <!-- <p>This field is required</p> -->
+          <p class="form__error"></p>
         </div>
 
-        <div class="input-group">
+        <div class="input-group validation-required">
           <label for="last-name">Last Name</label>
           <input
             type="text"
@@ -51,18 +51,17 @@
             autocomplete="family-name"
             required
           />
-          <!-- <p>This field is required</p> -->
+          <p class="form__error"></p>
         </div>
       </div>
 
-      <div class="input-group">
+      <div class="input-group validation-required">
         <label for="email">Email Address</label>
         <input class="form-input" type="email" id="email" required />
-        <!-- <p>Please enter a valid email address</p> -->
-        <!-- <p>This field is required</p> -->
+        <p class="form__error"></p>
       </div>
 
-      <div class="radio-group">
+      <div class="radio-group validation-required">
         <p class="radio-group__label form-label--req">Query Type</p>
         <div class="radio-group__items">
           <label for="query-type-general">
@@ -75,28 +74,31 @@
             Support Request
           </label>
         </div>
+        <p class="form__error"></p>
       </div>
-      <!-- <p>Please select a query type</p> -->
 
-      <div class="input-group">
+      <div class="input-group validation-required">
         <label for="message">Message</label>
         <textarea name="message" id="message" rows="12" required></textarea>
-        <!-- <p>This field is required</p> -->
+        <p class="form__error"></p>
       </div>
 
-      <div class="checkbox-group">
-        <input type="checkbox" name="contact" id="contact" />
-        <label class="form-label--req" for="contact">
-          I consent to being contacted by the team
-        </label>
+      <div class="checkbox-group validation-required">
+        <div class="checkbox-item">
+          <input type="checkbox" name="contact-consent" id="contact-consent" />
+          <label class="form-label--req" for="contact-consent">
+            I consent to being contacted by the team
+          </label>
+        </div>
+        <p class="form__error"></p>
       </div>
-
-      <!-- <p>To submit this form, please consent to being contacted</p> -->
 
       <button class="btn btn--primary btn--block" type="submit">Submit</button>
     </form>
 
     <!-- Message Sent!
   Thanks for completing the form. We'll be in touch soon! -->
+
+    <script src="./main.js"></script>
   </body>
 </html>

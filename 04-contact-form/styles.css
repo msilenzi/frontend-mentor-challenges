@@ -117,11 +117,14 @@ body {
 }
 
 .checkbox-group {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 1rem;
   margin-bottom: 1rem;
+
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+  }
 
   label {
     cursor: pointer;
@@ -162,7 +165,7 @@ body {
 .form-label--req::after {
   content: "*";
   color: var(--green-600);
-  margin-left: 0.25rem;
+  margin-left: 0.15ch;
 }
 
 .input-group :is(input, textarea):hover,
@@ -200,4 +203,14 @@ body {
 .btn--block {
   display: block;
   width: 100%;
+}
+
+.has-errors :is(input, textarea, checkbox, .radio-group label) {
+  border-color: var(--red-500);
+}
+
+.form__error {
+  font-size: 0.85rem;
+  color: var(--red-500);
+  margin: 0.25rem 0 0;
 }
