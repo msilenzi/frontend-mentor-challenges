@@ -82,12 +82,13 @@ const validations = [
 $form.addEventListener("submit", (e) => {
   e.preventDefault();
   clearAllErrors($form);
+  if (!isFormValid(validations)) return;
 
-  if (isFormValid(validations)) {
-    console.log("formulario válido");
-  } else {
-    console.log("formulario inválido");
-  }
+  const $successToast = document.getElementById("success-toast");
+  $successToast.classList.remove("hidden");
+
+  $form.reset()
+  setInterval(() => $successToast.classList.add("hidden"), 2000);
 });
 
 //#region form handler =========================================================

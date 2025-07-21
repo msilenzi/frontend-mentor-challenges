@@ -7,6 +7,7 @@
   --green-500: hsl(164, 43%, 41%);
   --green-600: hsl(169, 82%, 27%);
   --green-800: hsl(166, 82%, 17%);
+  --green-850: hsl(185, 24%, 22%);
   --red-500: hsl(0, 66%, 54%);
   --white: hsl(0, 0%, 100%);
   --grey-500: hsl(186, 15%, 59%);
@@ -15,6 +16,10 @@
 body {
   font-family: "Karla", sans-serif;
   background-color: var(--green-200);
+}
+
+.hidden {
+  display: none;
 }
 
 .form {
@@ -213,4 +218,33 @@ body {
   font-size: 0.85rem;
   color: var(--red-500);
   margin: 0.25rem 0 0;
+}
+
+.success-toast {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--green-850);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  .toast__header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    h2 {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+  }
 }
