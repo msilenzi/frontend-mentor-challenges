@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Contact form | msilenzi</title>
+  </head>
+
+  <body>
+    <form class="form">
+      <h1 class="page-title">Contact Us</h1>
+
+      <div class="radio-group__items">
+        <div class="input-group">
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            id="first-name"
+            autocomplete="given-name"
+            required
+          />
+          <!-- <p>This field is required</p> -->
+        </div>
+
+        <div class="input-group">
+          <label for="last-name">Last Name</label>
+          <input
+            type="text"
+            id="last-name"
+            autocomplete="family-name"
+            required
+          />
+          <!-- <p>This field is required</p> -->
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input class="form-input" type="email" id="email" required />
+        <!-- <p>Please enter a valid email address</p> -->
+        <!-- <p>This field is required</p> -->
+      </div>
+
+      <div class="radio-group">
+        <p class="radio-group__label form-label--req">Query Type</p>
+        <div class="radio-group__items">
+          <label for="query-type-general">
+            <input type="radio" name="query-type" id="query-type-general" />
+            General Enquiry
+          </label>
+
+          <label for="query-type-support">
+            <input type="radio" name="query-type" id="query-type-support" />
+            Support Request
+          </label>
+        </div>
+      </div>
+      <!-- <p>Please select a query type</p> -->
+
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="12" required></textarea>
+        <!-- <p>This field is required</p> -->
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" name="contact" id="contact" />
+        <label class="form-label--req" for="contact">
+          I consent to being contacted by the team
+        </label>
+      </div>
+
+      <!-- <p>To submit this form, please consent to being contacted</p> -->
+
+      <button class="btn btn--primary btn--block" type="submit">Submit</button>
+    </form>
+
+    <!-- Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+  </body>
+</html>

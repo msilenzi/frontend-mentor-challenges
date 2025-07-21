@@ -1,5 +1,11 @@
 const challenges = [
   {
+    name: "Contact Form",
+    imageSrc: "04-contact-form/screenshot.png",
+    href: "04-contact-form",
+    languages: ["html", "css", "js"],
+  },
+  {
     name: "FAQs Accordion",
     imageSrc: "03-faq-accordion/screenshot-faq-accordion.png",
     href: "03-faq-accordion",
