@@ -29,6 +29,14 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "daniel jeanette"
+      "daniel jonathan"
+      "patrick  kira";
+  }
+
   @media (min-width: 900px) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -64,7 +72,7 @@ body {
     color: var(--grey-200);
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 640px) {
     &.testimonial--daniel {
       grid-area: daniel;
       position: relative;
