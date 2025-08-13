@@ -1,5 +1,10 @@
 const challenges = [
   {
+    name: "Testimonials Grid Section",
+    folder: "05-testimonials-grid-section",
+    languages: ["html", "css"],
+  },
+  {
     name: "Contact Form",
     folder: "04-contact-form",
     languages: ["html", "css", "js"],
